@@ -1,1 +1,6 @@
-사용 툴 : Python(Google Colab)
+-사용 툴
+Python(Google Colab)
+
+-개선 필요점
+비율 표현시 *100을 통한 퍼센트로 보기 쉽게 바꿔주기
+게임 도메인 관련 추가 탐색 해보기
