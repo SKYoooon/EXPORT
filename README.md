@@ -1,1 +1,11 @@
-123
+- HR
+    - 우수 성과자들의 성과 확인
+    - 퇴직 촉발하는 주요 요인 발굴
+- Manufacture
+    - 이상탐지 기본(제조,금융,게임)
+    - 센서 데이터를 통한 웨이퍼 불량 탐색
+- E-Commerce
+    - E-commerce-1
+    - E-commerce-2
+- Final
+    - Final-1
