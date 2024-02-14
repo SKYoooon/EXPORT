@@ -1,11 +1,12 @@
 - HR
     - [우수 성과자들의 특성 확인](https://github.com/SKYoooon/EXPORT/tree/gitub/HR/Task1)  
-    - 퇴직 촉발하는 주요 요인 발굴
+    - [퇴직 촉발하는 주요 요인 발굴](https://github.com/SKYoooon/EXPORT/tree/github/HR/Task2)
+    - [SQL](https://github.com/SKYoooon/EXPORT/tree/github/HR/SQL_Test)
 - Manufacture
-    - 이상탐지 기본(제조,금융,게임)
-    - 센서 데이터를 통한 웨이퍼 불량 탐색
+    - [이상탐지 기본(제조,금융,게임)](https://github.com/SKYoooon/EXPORT/tree/github/Manufacture/Task1)
+    - [센서 데이터를 통한 웨이퍼 불량 탐색](https://github.com/SKYoooon/EXPORT/tree/github/Manufacture/Task2)
 - E-Commerce
-    - E-commerce-1
-    - E-commerce-2
+    - [E-commerce-1](https://github.com/SKYoooon/EXPORT/tree/github/Ecommerce/Task1)
+    - [E-commerce-2](https://github.com/SKYoooon/EXPORT/tree/github/Ecommerce/Task1)
 - Final
-    - Final-1
+    - [Final](https://github.com/SKYoooon/EXPORT/tree/github/Final)
