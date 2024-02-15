@@ -1,4 +1,8 @@
 ***
+# **About**
+FastCampus ByteDegree EXPORT 과정은 현업에서 자주 사용되는 SQL, Python, Excel, Tableau을 사용하여 개인 프로젝트를 진행합니다.
+인사, 제조, 이커머스 분야의 데이터를 분석하고 인사이트를 도출하였습니다. 현직자분들의 피드백을 통해, 데이터 분석 역량을 업그레이드하였습니다.
+
 # **Projects 🧑‍💻**
 
 ### **- FastCampus ByteDegree EXPORT** 
