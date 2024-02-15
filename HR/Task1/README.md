@@ -4,29 +4,24 @@
 # ▶ 우수 성과자들의 특성 확인 <img src="https://img.shields.io/badge/Personal_Project-000000"/>
 
 <!--목적-->
-## - 목적
+### - 목적
 
 - 직장 내 우수 성과자들의 특성을 확인하여, 임직원의 업무 성과 향상 방안을 도출
 
 <!--기대효과Expected Impact-->
-## - 기대효과
+### - 기대효과
 
 - 적절한 개발 프로그램을 설계 → 임직원의 역량 향상을 통한 회사의 생산성 증대
 
 <!--기간Project Duration-->
 <!--역할Role-->
 <!--사용 툴Tools Used-->
-## - 사용 툴
+### - 사용 툴
 
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white"/>
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white"/>
-<img src="https://img.shields.io/badge/VisualStudioCode-007ACC?style=flat&logo=visualstudiocode&logoColor=white"/>
-<img src="https://img.shields.io/badge/DBeaver-382923?style=flat&logo=dbeaver&logoColor=white"/>
-<img src="https://img.shields.io/badge/MicrosoftExcel-217346?style=flat&logo=microsoftexcel&logoColor=white"/>
-<img src="https://img.shields.io/badge/MicrosoftPowerPoint-B7472A?style=flat&logo=microsoftpowerpoint&logoColor=white"/>
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white"/> <img src="https://img.shields.io/badge/VisualStudioCode-007ACC?style=flat&logo=visualstudiocode&logoColor=white"/> <img src="https://img.shields.io/badge/DBeaver-382923?style=flat&logo=dbeaver&logoColor=white"/> <img src="https://img.shields.io/badge/MicrosoftExcel-217346?style=flat&logo=microsoftexcel&logoColor=white"/> <img src="https://img.shields.io/badge/MicrosoftPowerPoint-B7472A?style=flat&logo=microsoftpowerpoint&logoColor=white"/>
 
 <!--데이터 설명Data Description-->
-## - 데이터 설명
+### - 데이터 설명
 - 임직원 데이터 : 1470 Row * 35 Col
 ![alt text](image.png)
 
@@ -37,7 +32,7 @@
 
 <!--분석 프로세스Analysis Process(전처리,피쳐셀렉션,표준화/정규화,모델셀렉션,성능평가/Threshold,...)-->
 <!--결과Results-->
-## - 결과
+### - 결과
 - 승진 시기인 6, 10년에 진급하기 위해 높은 성과를 받는 것으로 판단됨
 **<span style="color:red">승진 주기를 짧게, 계급을 다양화</span>** 하면 지속적인 높은 성과를 위한 동기부여가 될 것으로 예상됨.
 ![alt text](image-3.png)
@@ -61,7 +56,7 @@
 <br/>
 
 <!--Lesson&Learned-->
-## - Lesson & Learned
+### - Lesson & Learned
 -  문제정의 → **가설** → 분석 → 결과 → 결론 순으로 보고서 작성 추천!
     데이터를 보고 가설 설정하고 이를 증명하는 방향으로 잡기
 - 결론 도달 시 **비약 조심**!!!
