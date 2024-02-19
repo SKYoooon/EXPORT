@@ -148,11 +148,11 @@
     ![alt text](image-3.png)<br/>
     ![alt text](image-4.png)<br/>
 <br/>
-- 추가 탐색
-  - 사기 의심(isFlagged)
-    - 거래 Type이 모두 Transfer
-    → 의심 거래의 거래 수신 고객(nameDest) 확인
-    → 모두 사기꾼 명단에 포함되어 있음. 사기 의심은 사기꾼에게 금액이 송금되었기에 감지
+- 추가 탐색<br/>
+  - 사기 의심(isFlagged)<br/>
+    - 거래 Type이 모두 Transfer<br/>
+    → 의심 거래의 거래 수신 고객(nameDest) 확인<br/>
+    → 모두 사기꾼 명단에 포함되어 있음. 사기 의심은 사기꾼에게 금액이 송금되었기에 감지<br/>
 </details>
 
 <details>
@@ -217,7 +217,7 @@
 
 -추가 탐색
     - killplace가 적을 제압한 위치가 아니라 생각되어 구글링해보니 킬 등수로 판단됨<br/>
-        >https://www.kaggle.com/competitions/pubg-finish-placement-prediction/data<br/>
+    > https://www.kaggle.com/competitions/pubg-finish-placement-prediction/data
     - 의심 인원들 중, 무기 획득 4개 이상인 인원들만 추출해서 확인<br/>
     → killplace, maxplace가 전체적으로 높아지는 모습<br/>
     → 실력자가 좋은 위치를 선정했는지, 벌그를 악용하여 초반에 킬을 많이 했는지, 실력자가 버그를 악용했는지 구분이 불가함<br/>
