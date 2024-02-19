@@ -38,11 +38,12 @@
 
 1. 전체 데이터의 개수에서 'anomaly'가 차지하는 비율은?
     - value_counts로 풀이
+      - Anomaly 0 : 1 = 68.67% : 31.33%<br/>
 
-      - Anomaly 0 : 1 = 68.67% : 31.33%   
 2. 'Accelerometer1RMS','Accelerometer2RMS','Current','Pressure','Temperature','Thermocouple','Voltage','Volume Flow RateRMS'
   총 8개의 Column 대상으로 총 8개의 Trend 그래프를 시각화 하시오.
-  (※ x = 'datetime', y= 각 Column)
+  (※ x = 'datetime', y= 각 Column)<br/>
+
     - Matplotlib 사용
     ```
     columns = ['Accelerometer1RMS', 'Accelerometer2RMS', 'Current', 'Pressure',
@@ -61,9 +62,9 @@
     ![alt text](image.png)
 
 3. 시각화만 Trend 그래프 위에 'anomaly'가 1인 데이터에 대해서 이상 포인트를 표시하시오.
-  (※ Trend 그래프에서 이상 Point를 구별할 수 있는 방법이라면 자유롭게 표현 가능)
+  (※ Trend 그래프에서 이상 Point를 구별할 수 있는 방법이라면 자유롭게 표현 가능)<br/>
     -  빨간색으로 Anomaly를 위에 덧그림
-       -  Volume Flow RateRMS가 값이 낮아지는 구간과 Anomaly = 1인 구간이 유사하여, 해당 변수가 원인일 수 있음
+       -  Volume Flow RateRMS가 값이 낮아지는 구간과 Anomaly = 1인 구간이 유사하여, 해당 변수가 원인일 수 있음<br/>
     ```
     fig, axes = plt.subplots(4, 2, figsize=(15, 15))
 
@@ -110,10 +111,9 @@
 
 1. 'isFraud' Column을 활용하여, 전체 사기율(%)을 계산하시오.
     - value_counts로 풀이
-
-      - isFraud 0 : 1 = 99.87% : 0.13%   
+      - isFraud 0 : 1 = 99.87% : 0.13% <br/> 
 2. 'type'에 따른 사기율(%)을 계산하시오.
-    - 5종류의 타입 중 Transfer의 비율이 높음
+    - 5종류의 타입 중 Transfer의 비율이 높음<br/>
     ```
     type_list = ['PAYMENT', 'TRANSFER', 'CASH_OUT', 'DEBIT', 'CASH_IN']
 
@@ -132,9 +132,9 @@
 
 
 3. 사기거래와 사기거래가 아닌 거래의 amount의 분포를 비교하시오.
-  (※ isFraud가 1인 데이터 1000개를 Sampling하고 isFraud가 0인 데이터를 1000개를 Sampling하여 시각화 할 것)
+  (※ isFraud가 1인 데이터 1000개를 Sampling하고 isFraud가 0인 데이터를 1000개를 Sampling하여 시각화 할 것)<br/>
     - 10,000,000이 한도로 예상됨
-    - 소액사기가 많으며, 한도 근처에서 횟수가 늘어남
+    - 소액사기가 많으며, 한도 근처에서 횟수가 늘어남<br/>
     ```
     df0_sampled = df[df['isFraud'] == 0]['amount'].sample(1000,random_state=23)
     df1_sampled = df[df['isFraud'] == 1]['amount'].sample(1000,random_state=23)
@@ -148,6 +148,7 @@
     ![alt text](image-2.png)
     ![alt text](image-3.png)
     ![alt text](image-4.png)
+<br/>
 - 추가 탐색
   - 사기 의심(isFlagged)
     - 거래 Type이 모두 Transfer
@@ -159,7 +160,7 @@
 <summary>3. 게임</summary>
 
 ### - 데이터 설명
-- 3. 게임 데이터 - 6225249 Rows * 27 Columns
+- 게임 데이터 - 6225249 Rows * 27 Columns
 
 |Column|Description|
 |---|---|
@@ -194,7 +195,7 @@
 
 >다음 가설들을 데이터 분석을 통해 검증하시오.
 >[가설] Without moving & WeaponsAcquired - analyze : 이동 없이 무기를 획득한 버그 유저가 존재할까?
-
+<br/>
 1. _totalDistance가 하위 10%인 Data set을 만드시오.
   (※ '_totalDistance' = 'rideDistance' + 'walkDistance' + 'swimDistance')
   - df['_totalDistance'].quantile(0.1) = 39.93
@@ -203,6 +204,7 @@
     df_shortDistance = df[df['_totalDistance'] <= df['_totalDistance'].quantile(0.1)]
     df_shortDistance['_totalDistance'].describe()
     ```
+<br/>
 
 2. 1번에서 만든 Data set에서 weaponsAcquired가 상위 1%인 버그의심 유저 수를 출력하시오.
 - 15300명 검출
@@ -211,6 +213,7 @@
                                     >= df_shortDistance['weaponsAcquired'].quantile(0.99)]
     df_shortDistance_weaponAcquied['Id'].nunique()
     ```
+<br/>
 
 -추가 탐색
     - killplace가 적을 제압한 위치가 아니라 생각되어 구글링해보니 킬 등수로 판단됨
