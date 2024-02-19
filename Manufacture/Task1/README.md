@@ -58,7 +58,7 @@
     plt.tight_layout()
     plt.show()
     ```
-    ![alt text](image.png)
+    ![alt text](image.png)<br/>
 
 3. 시각화만 Trend 그래프 위에 'anomaly'가 1인 데이터에 대해서 이상 포인트를 표시하시오.
   (※ Trend 그래프에서 이상 Point를 구별할 수 있는 방법이라면 자유롭게 표현 가능)<br/>
@@ -76,7 +76,7 @@
     plt.tight_layout()
     plt.show()
     ```
-    ![alt text](image-1.png)
+    ![alt text](image-1.png)<br/>
 
 - 추가 탐색
   -   1분간 비어있는 구간 (16:31:29 ~ 16:32:31)<br/>
@@ -144,9 +144,9 @@
     plt.xlabel('Amount')
     plt.show()
     ```
-    ![alt text](image-2.png)
-    ![alt text](image-3.png)
-    ![alt text](image-4.png)
+    ![alt text](image-2.png)<br/>
+    ![alt text](image-3.png)<br/>
+    ![alt text](image-4.png)<br/>
 <br/>
 - 추가 탐색
   - 사기 의심(isFlagged)
@@ -223,9 +223,9 @@
     → 실력자가 좋은 위치를 선정했는지, 벌그를 악용하여 초반에 킬을 많이 했는지, 실력자가 버그를 악용했는지 구분이 불가함<br/>
     → 버그 악용이 한 장소에서만 가능하다면, 이동거리에 비해 아이템 수가 많고 상대적으로 적을 적게 만나니 킬이 적을 것이라고 예상됨.<br/>
     → 거리 별 획득 무기 개수 / 킬 별 획득 무기 개수 컬럼 추가<br/>
-    ![alt text](image-5.png)
+    ![alt text](image-5.png)<br/>
     → 두 변수 모두 0.25e7 이상인 버그 악용 예상 유저 405명 확인<br/>
-    ![alt text](image-6.png)
+    ![alt text](image-6.png)<br/>
 
 
 ### - 결론
