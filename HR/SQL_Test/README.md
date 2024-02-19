@@ -1,5 +1,5 @@
 ***
-# ▶ 퇴직을 촉발하는 주요 요인 발굴 <img src="https://img.shields.io/badge/Practice_Test-000000"/>
+# ▶ SQL 미니 테스트 <img src="https://img.shields.io/badge/Practice_Test-000000"/>
 
 ### - 문제
 - Q. 일자별로 가장 많은 금액을 구매한 사람을 추출하고, 아래 형식과 같이 결과를 표시해주세요.
