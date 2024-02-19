@@ -196,6 +196,7 @@
 >다음 가설들을 데이터 분석을 통해 검증하시오.
 >[가설] Without moving & WeaponsAcquired - analyze : 이동 없이 무기를 획득한 버그 유저가 존재할까?
 <br/>
+
 1. _totalDistance가 하위 10%인 Data set을 만드시오.
   (※ '_totalDistance' = 'rideDistance' + 'walkDistance' + 'swimDistance')
   - df['_totalDistance'].quantile(0.1) = 39.93
