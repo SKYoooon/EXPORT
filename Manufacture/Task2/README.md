@@ -46,7 +46,7 @@
 |---|---|
 |Accuracy|89.68%|
 |Precision|37.68%|
-|Recall|36.36%|
+|**Recall**|**36.36%**|
 |F1 Score|37.01%|
 
 1. PCA + Mahalanobis
@@ -61,7 +61,7 @@
 		|---|---|
 		|Accuracy|72.59%|
 		|Precision|13.91%|
-		|Recall|44.01%|
+		|**Recall**|**44.01%**|
 		|F1 Score|21.14	%|
 
 ### - 결론
