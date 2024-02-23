@@ -24,7 +24,7 @@
 |customer_id |고객id|
 |DOB|고객 생년월일 (날짜 형식 데이터)|
 |Gender|고객 성별 (M : 남성 / F : 여성)|
-|city_code|: 거주지 코드 (1부터 10까지 숫자로 구성)|
+|city_code|거주지 코드 (1부터 10까지 숫자로 구성)|
 
 2. Transactions : 23053 Rows * 10 Columns
 
