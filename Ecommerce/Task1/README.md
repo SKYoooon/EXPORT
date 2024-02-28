@@ -4,8 +4,8 @@
 
 ### - 목적
 
-- 매출 관점에서 카테고리별 매출 성장 방안 마련
-- 고객 관점에서 구매 활동성 증대 방안
+- 고객 관점에서 구매 활동성 증대 방안 도출
+  -  코호트 및 RFM을 통한 고객 세그멘트 분류 후, 적합한 마케팅 실시
 
 ### - 기대효과
 
@@ -18,7 +18,7 @@
 ### - 데이터 설명
 ![alt text](ERD.png)
 1. Customer : 5647 Row * 4 Col
-    - DOB 컬럼'%d-%m-%Y'형식
+    - DOB 컬럼 '%d-%m-%Y' 형식
     - Gender Null값 Unknown으로 대체
     - city_code Null값 11로 대체
 
@@ -65,11 +65,6 @@
 - 세 데이터 Merge 후 결제 당시 나이(age) 컬럼 추가<br/>
     → 19세부터 44세까지 분포
 
-<!-- 가정 및 가설 -->
-### - 가정
-
-
-### - 가설
 
 ### - EDA
 
@@ -105,24 +100,64 @@
 
 #### - 카테고리 확인
 - 3년간 카테고리별 월평균매출
-  - 변동계수(cv) 기준 Clothing 1위, Clothing과 Bags 시즌마다 매출변동성 큼
-  - 평균으로는 Books가 1위
+  - 변동계수(cv) 기준 Clothing 1위, Bags 2위로 가장 큼 → 시즌마다 매출변동성 큼
+  - 평균으로는 Books가 1위 → 꾸준하게 매출이 높음
 
 
 |상품명|평균|분산|표준편차|변동계수|
 |---|---|---|---|---|
-|Clothing|166,016|1.63e+09|40,381|0.243237|
-|Bags|109,989|6.26e+08|25,027|0.227544|
-|Footwear|166,962|1.35e+09|36,7063|0.219843|
-|Home and kitchen|224,517|1.80e+09|42,372|0.188727|
-|Electronics|285,979|2.75e+09|52,472|0.183481
-|Books|341,675|2.98e+09|54,624|0.159870|
+|Clothing|166,016|1.63e+09|40,381|0.243|
+|Bags|109,989|6.26e+08|25,027|0.228|
+|Footwear|166,962|1.35e+09|36,705|0.220|
+|Home and kitchen|224,517|1.80e+09|42,372|0.189|
+|Electronics|285,979|2.75e+09|52,472|0.183|
+|Books|341,675|2.98e+09|54,624|0.160|
 
-<!--결과Results-->
+### 분석
+- 구매화정건만 추출
+- 모든 기간을 포함하고 있는 2012,2013만 사용
+- 리텐션율 계산
+```
+# 리텐션율 계산 
+retention = pd.DataFrame()
+for s in tqdm(ord_ym_list):
+    for t in ord_ym_list:
+        period_start = s
+        period_target = t
+
+        if period_start <= period_target:
+            period_start_users = set(retention_data.query('ord_ym == @period_start')['customer_Id'])
+            period_target_users = set(retention_data.query('ord_ym == @period_target')['customer_Id'])
+
+            retained_users = period_start_users.intersection(period_target_users)
+
+            retention_rate = len(retained_users)/len(period_start_users)
+
+            temp = pd.DataFrame({'cohort':[period_start], 'ord_ym':[period_target], 'retention_rate':[retention_rate]})
+
+            retention = pd.concat([retention, temp])
+```
+![alt text](cohort.png)
+![alt text](image-8.png)
+- RFM
+  - 2013년 6월, 12월 
+  - recency_score(3: 가장 최근에 구매한 고객2: 중간, 1: 오래된 고객).
+monetary_score(1: 낮은 구매액, 2: 중간, 3: 높은 구매액).
+frequency_score(1: 낮은 빈도, 2: 중간, 3: 높은 빈도).
+-    '1_최우수''2_우수''3_윈백대상''4_최신성존재_구매필요''5_휴면'
+- rfm_user_now['overall_score'] = rfm_user_now['recency_score'].astype(int)*0.4 + rfm_user_now['monetary_score'].astype(int)*0.4 + rfm_user_now['frequency_score'].astype(int)*0.2
+- 상승 동일 하락 
+
+
 ### - 결과 및 결론
 
+- 동일 + 하락의 고객이 더 만음 (50퍼 초과)
+해당 고객에게 추가적인 마케팅
+상승 고객 대상에게는 별도 마케팅, 추가 분석을 통해 상승 이유 도출
 
 
-
-<!--Lesson&Learned-->
 ### - Lesson & Learned
+- 코호트 분석 , 리텐션, RFM
+- 데이터 결합 시 양식 통일 주의
+- 현업에서 연간 트렌드 분석을 통해 서비스 개선점 발견 가능
+- query,intersection,
