@@ -1,6 +1,6 @@
 ***
 
-# ▶ 온라인 커머스 데이터 분석 <img src="https://img.shields.io/badge/Personal_Project-000000"/>
+# ▶ 온라인 커머스 고객 코호트 및 RFM 분석 <img src="https://img.shields.io/badge/Personal_Project-000000"/>
 
 ### - 목적
 
@@ -71,18 +71,25 @@
 #### - 2011년 기준
 
 - 19세부터 41세까지 분포
-- 나이 범위화 후 시각화 ![alt text](image.png) ![alt text](image-1.png)
-- 성별 파이차트 ![alt text](image-2.png)
+- 나이 범위화 후 시각화<br/>
+![alt text](image.png)<br/>
+![alt text](image-1.png)
+- 성별 파이차트<br/>
+ ![alt text](image-2.png)
 
 #### - 2013년 2월 28일 기준
 
 - 첫 구매일자(first_purchase_date), 총 구매일수(count), 구매 경과 일수(days_elapsed), 구매주기(purchase_cycle) 컬럼 추가
   - 1376명이 한번만 방문하여 구매주기가 계산되지않음
-- 2011년 대비 전체 고객 수가 증가한 모습![alt text](image-3.png)
-- 39-43의 비율이 높아짐 ![alt text](image-4.png)
-- 남성의 비율 소폭 상승 ![alt text](image-5.png)
-- 구매 경과 일수, 구매 주기는 큰 차이 없음(2회 이상 방문자만) ![alt text](image-6.png)
-- 34-38 연령대의 1회 결제 후 미방문 고객이 많아 경과일수가 상대적으로 높음 [alt text](image-7.png)
+- 2011년 대비 전체 고객 수가 증가한 모습![alt text]<br/>
+(image-3.png)
+- 39-43의 비율이 높아짐<br/>
+![alt text](image-4.png)
+- 남성의 비율 소폭 상승<br/>
+![alt text](image-5.png)
+- 구매 경과 일수, 구매 주기는 큰 차이 없음(2회 이상 방문자만)<br/>
+![alt text](image-6.png)
+- 34-38 연령대의 1회 결제 후 미방문 고객이 많아 경과일수가 상대적으로 높음 <br/>[alt text](image-7.png)
 - 구매한지 30일 이상 회원 대상 프로모션(2013-03-01~2013-12-31) 4675명 중 2800명 참여 
 
 #### - 요일 확인
@@ -136,10 +143,10 @@ for s in tqdm(ord_ym_list):
 
             retention = pd.concat([retention, temp])
 ```
-- 코호트
+- 코호트<br/>
 ![alt text](cohort.png)
   - 6% ~ 12% 내 분포, 시간이 지남에도 전체적으로 유지되는 모습
-- 리텐션 커브
+- 리텐션 커브<br/>
 ![alt text](image-8.png)
   - 1개월 후부터는 9% 내외가 유지되며, 큰 변동이 없는 모습
   
@@ -154,13 +161,14 @@ for s in tqdm(ord_ym_list):
 |Frequncy|1: 낮은 구매액 / 2: 중간 / 3: 높은 구매액|
 |Monetary|1: 낮은 빈도 / 2: 중간 / 3: 높은 빈도|
 
-- Receny, Monetary 기준으로 고객 5그룹 분류 (Frequency 값이 전체적으로 낮음) → 최근 구매기록이 없으며 거래 금액이 큰 이탈 고객 윈백 필요
+- Receny, Monetary 기준으로 고객 5그룹 분류 (Frequency 값이 전체적으로 낮음)
+<br/>→ 최근 구매기록이 없으며 거래 금액이 큰 이탈 고객 윈백 필요
   - 최우수 / 우수 / 윈백대상 / 최근 구매 but 금액 적음 / 휴면고객
 
-- 2013년 06월 기준 고객 분포
+- 2013년 06월 기준 고객 분포<br/>
 ![alt text](map201306.png)
 
-- 2013년 12월 기준 고객 분포
+- 2013년 12월 기준 고객 분포<br/>
 ![alt text](map201312.png)
   - 6월과 비슷한 양상<br/>
   - 윈백 대상 6월 대비 14명 증가하여 782명
