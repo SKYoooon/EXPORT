@@ -26,8 +26,8 @@
 
 ### - 모델링
 1. Isolation Forest
-  - 차원이 높고 이상치가 적은 데이터셋에 효과적인 트리 기반 비지도 학습 모델
-  ```
+	- 차원이 높고 이상치가 적은 데이터셋에 효과적인 트리 기반 비지도 학습 모델
+	```
 	# Isolation Forest모델링
 	X = df_scaled.drop(['Class'], axis=1)
 	Y = df_scaled['Class']
@@ -38,18 +38,18 @@
 	# 이상치 예측( -1(이상치) → 1, 1(정상치) → 0)
 	y_pred = isolation_forest.predict(X)
 	y_pred_adjusted = [1 if x == -1 else 0 for x in y_pred]
-  ```
+	  ```
 
-![alt text](image-2.png)
+	![alt text](image-2.png)
 
-|평가지표|값|
-|---|---|
-|Accuracy|89.68%|
-|Precision|37.68%|
-|**Recall**|**36.36%**|
-|F1 Score|37.01%|
+	|평가지표|값|
+	|---|---|
+	|Accuracy|89.68%|
+	|Precision|37.68%|
+	|**Recall**|**36.36%**|
+	|F1 Score|37.01%|
 
-1. PCA + Mahalanobis
+2. PCA + Mahalanobis
 	- 다변량 데이터에서 매우 효과적인 모델![alt text](image-4.png)
 	- 200개 PC까지 사용했을 때, 90%정도 분산을 설명할 수 있음
 	![alt text](image-3.png)
