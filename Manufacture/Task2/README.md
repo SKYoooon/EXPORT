@@ -18,7 +18,7 @@
 ### - 데이터 설명
 - 센서 데이터 : 2519 Rows * 1559 Columns
   - Class 0(정상) : Class 1(이상) = 91.7%(1572) : 8.3%(143)
-  - Feature 1~3 숫자형 데이터, Feature 4~1558 이진 데이터
+  - Feature 1 ~ 3 숫자형 데이터, Feature 4 ~ 1558 이진 데이터
   ![alt text](image.png)
     - Feature1~3의 범위가 크기에, StandardScaling 적용
   - 하나의 값만으로 이루어진 컬럼 제거 후, Correlation Matrix 확인
