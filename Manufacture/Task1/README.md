@@ -13,25 +13,25 @@
 
 ## - 분야별 문제 풀이
 <details>
-<summary>1. 제조</summary>
+<summary>1. 제조(Folded)</summary>
 
 ### - 데이터 설명
 - 제조 데이터 : 1063 Rows * 11 Columns
   - 2020-03-09 16:31:29 ~ 16:32:31 1분간 없으며, 중간 데이터 누락(75개) 존재.
 
-|Column|Description|
-|------|------|
-|datetime|시간|
-|Accelerometer1RMS|진동 가속도1|
-|Accelerometer2RMS|진동 가속도2|
-|Current|전기모터 암페어(Ampere)|
-|Pressure|워터 펌프 후 루프의 압력(Bar)|
-|Temperature|엔진의 온도(섭씨 온도)|
-|Thermocouple|순환 루프에서 유체의 온도(섭씨 온도)|
-|Voltage|전기 모터의 전압(Volt)|
-|RateRMS|루프 내부의 유체의 순환 유량(Liter/min)|
-|anomaly|이상여부|
-|changepoint|변경점 여부|
+      |Column|Description|
+      |------|------|
+      |datetime|시간|
+      |Accelerometer1RMS|진동 가속도1|
+      |Accelerometer2RMS|진동 가속도2|
+      |Current|전기모터 암페어(Ampere)|
+      |Pressure|워터 펌프 후 루프의 압력(Bar)|
+      |Temperature|엔진의 온도(섭씨 온도)|
+      |Thermocouple|순환 루프에서 유체의 온도(섭씨 온도)|
+      |Voltage|전기 모터의 전압(Volt)|
+      |RateRMS|루프 내부의 유체의 순환 유량(Liter/min)|
+      |anomaly|이상여부|
+      |changepoint|변경점 여부|
 
 ### - 문제 및 풀이
 
@@ -87,24 +87,24 @@
 </details>
 
 <details>
-<summary>2. 금융</summary>
+<summary>2. 금융(Folded)</summary>
 
 ### - 데이터 설명
 - 금융 데이터 - 6362620 Rows * 11 Columns
 
-|Column|Description|
-|---|---|
-|step|1step이 1시간인 시간 단위|
-|type|온라인 거래유형|
-|amount|거래 금액|
-|nameOrig|거래 시작 고객|
-|oldbalanceOrg|거래 전 잔액|
-|newbalanceOrig|거래 후 잔액|
-|nameDest|거래 수신 고객|
-|oldbalanceDest|거래 전 수취인의 초기 잔액|
-|newbalanceDest|거래 후 받는 사람의 새 잔액|
-|isFraud|사기 거래|
-|isFlaggedFraud|의심사기거래|
+  |Column|Description|
+  |---|---|
+  |step|1step이 1시간인 시간 단위|
+  |type|온라인 거래유형|
+  |amount|거래 금액|
+  |nameOrig|거래 시작 고객|
+  |oldbalanceOrg|거래 전 잔액|
+  |newbalanceOrig|거래 후 잔액|
+  |nameDest|거래 수신 고객|
+  |oldbalanceDest|거래 전 수취인의 초기 잔액|
+  |newbalanceDest|거래 후 받는 사람의 새 잔액|
+  |isFraud|사기 거래|
+  |isFlaggedFraud|의심사기거래|
 
 ### - 문제 및 풀이
 
@@ -121,13 +121,13 @@
         print(f"Type: {i}\nFraud Rate: {fraud_rate:.8f}%")
     ```
 
-  - |Type|사기율|
-    |---|---|
-    |PAYMENT|0.00000000%|
-    |TRANSFER|0.76879918%|
-    |CASH_OUT|0.18395531%|
-    |DEBIT|0.00000000%|
-    |CASH_IN|0.00000000%|   
+       |Type|사기율|
+       |---|---|
+       |PAYMENT|0.00000000%|
+       |TRANSFER|0.76879918%|
+       |CASH_OUT|0.18395531%|
+       |DEBIT|0.00000000%|
+       |CASH_IN|0.00000000%|   
 
 
 3. 사기거래와 사기거래가 아닌 거래의 amount의 분포를 비교하시오.<br/>
@@ -156,43 +156,43 @@
 </details>
 
 <details>
-<summary>3. 게임</summary>
+<summary>3. 게임(Folded)</summary>
 
 ### - 데이터 설명
 - 게임 데이터 - 6225249 Rows * 27 Columns
 
-|Column|Description|
-|---|---|
-|ID|ID|
-|groupId|그룹ID|
-|matchId|경기ID|
-|assists|서포트횟수|
-|boosts|부스트 아이템 사용횟수|
-|damageDealt|총 입힌 데미지|
-|DBNOs|적을 기절시킨 횟수|
-|headshotKills|헤드샷킬수|
-|heals	heal|아이템 사용횟수|
-|killPlace|적을제압한위치|
-|killPoints|적제압포인트|
-|kills|적 제압횟수|
-|killStreaks|가장 많이 적 제압횟수|
-|longestKill|멀리서 적 제압횟수|
-|maxPlace|최악의배치넘버|
-|numGroups|그룹넘버|
-|revives|부활횟수|
-|rideDistance|이동수단 타고 이동거리|
-|roadKills|이동수단으로 적 제압횟수|
-|swimDistance|수영한거리|
-|teamKills|같은팀 제압횟수|
-|vehicleDestroys|자동차 파괴횟수|
-|walkDistance|도보이동거리|
-|weaponsAcquired|무기 획득횟수
-|winPoints|승점|
-|winPlacePerc|승률|
+    |Column|Description|
+    |---|---|
+    |ID|ID|
+    |groupId|그룹ID|
+    |matchId|경기ID|
+    |assists|서포트횟수|
+    |boosts|부스트 아이템 사용횟수|
+    |damageDealt|총 입힌 데미지|
+    |DBNOs|적을 기절시킨 횟수|
+    |headshotKills|헤드샷킬수|
+    |heals	heal|아이템 사용횟수|
+    |killPlace|적을제압한위치|
+    |killPoints|적제압포인트|
+    |kills|적 제압횟수|
+    |killStreaks|가장 많이 적 제압횟수|
+    |longestKill|멀리서 적 제압횟수|
+    |maxPlace|최악의배치넘버|
+    |numGroups|그룹넘버|
+    |revives|부활횟수|
+    |rideDistance|이동수단 타고 이동거리|
+    |roadKills|이동수단으로 적 제압횟수|
+    |swimDistance|수영한거리|
+    |teamKills|같은팀 제압횟수|
+    |vehicleDestroys|자동차 파괴횟수|
+    |walkDistance|도보이동거리|
+    |weaponsAcquired|무기 획득횟수
+    |winPoints|승점|
+    |winPlacePerc|승률|
 
 ### - 문제 및 풀이
 
->다음 가설들을 데이터 분석을 통해 검증하시오.
+>다음 가설들을 데이터 분석을 통해 검증하시오.<br/>
 >[가설] Without moving & WeaponsAcquired - analyze : 이동 없이 무기를 획득한 버그 유저가 존재할까?
 <br/>
 
@@ -215,16 +215,16 @@
     ```
 <br/>
 
--추가 탐색
-    - killplace가 적을 제압한 위치가 아니라 생각되어 구글링해보니 킬 등수로 판단됨<br/>
-    - 의심 인원들 중, 무기 획득 4개 이상인 인원들만 추출해서 확인<br/>
-    → killplace, maxplace가 전체적으로 높아지는 모습<br/>
-    → 실력자가 좋은 위치를 선정했는지, 벌그를 악용하여 초반에 킬을 많이 했는지, 실력자가 버그를 악용했는지 구분이 불가함<br/>
-    → 버그 악용이 한 장소에서만 가능하다면, 이동거리에 비해 아이템 수가 많고 상대적으로 적을 적게 만나니 킬이 적을 것이라고 예상됨.<br/>
-    → 거리 별 획득 무기 개수 / 킬 별 획득 무기 개수 컬럼 추가<br/>
-    ![alt text](image-5.png)<br/>
-    → 두 변수 모두 0.25e7 이상인 버그 악용 예상 유저 405명 확인<br/>
-    ![alt text](image-6.png)<br/>
+  -추가 탐색
+      - killplace가 적을 제압한 위치가 아니라 생각되어 구글링해보니 킬 등수로 판단됨<br/>
+      - 의심 인원들 중, 무기 획득 4개 이상인 인원들만 추출해서 확인<br/>
+      → killplace, maxplace가 전체적으로 높아지는 모습<br/>
+      → 실력자가 좋은 위치를 선정했는지, 벌그를 악용하여 초반에 킬을 많이 했는지, 실력자가 버그를 악용했는지 구분이 불가함<br/>
+      → 버그 악용이 한 장소에서만 가능하다면, 이동거리에 비해 아이템 수가 많고 상대적으로 적을 적게 만나니 킬이 적을 것이라고 예상됨.<br/>
+      → 거리 별 획득 무기 개수 / 킬 별 획득 무기 개수 컬럼 추가<br/>
+      ![alt text](image-5.png)<br/>
+      → 두 변수 모두 0.25e7 이상인 버그 악용 예상 유저 405명 확인<br/>
+      ![alt text](image-6.png)<br/>
 
 
 ### - 결론

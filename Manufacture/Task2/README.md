@@ -50,13 +50,15 @@
 	|F1 Score|37.01%|
 
 2. PCA + Mahalanobis
-	- 다변량 데이터에서 매우 효과적인 모델![alt text](image-4.png)
-	- 200개 PC까지 사용했을 때, 90%정도 분산을 설명할 수 있음
-	![alt text](image-3.png)
-	- Threshold 조정 (하위 75%)
-	![alt text](image-5.png)
-	- Recall 9.8% → 44.1%
-	![alt text](image-6.png)
+	- 다변량 데이터에서 매우 효과적인 모델<br/>
+		![alt text](image-4.png)
+	- 200개 PC까지 사용했을 때, 90%정도 분산을 설명할 수 있음<br/>
+		![alt text](image-3.png)
+	- Threshold 조정 (하위 75%)<br/>
+		![alt text](image-5.png)
+	- Recall 9.8% → 44.1%<br/>
+		![alt text](image-6.png)
+
 		|평가지표|값|
 		|---|---|
 		|Accuracy|72.59%|

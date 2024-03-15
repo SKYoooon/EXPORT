@@ -13,24 +13,22 @@
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white"/> <img src="https://img.shields.io/badge/VisualStudioCode-007ACC?style=flat&logo=visualstudiocode&logoColor=white"/> <img src="https://img.shields.io/badge/DBeaver-382923?style=flat&logo=dbeaver&logoColor=white"/> <img src="https://img.shields.io/badge/Tableau-E97627?style=flat&logo=tableau&logoColor=white"/>
 
 ### - 데이터 설명
+ - 2022-01-01 ~ 2023-08-28 데이터
 ![alt text](EXPORT_Final.png)
+
 
 1. order
   - 27894 Rows * 11 Columns
-  - 2022-01-01 ~ 2023-08-28
 
 2. course
   - 27894 Rows * 9 Columns
-  - 2022-01-01 ~ 2023-08-28
 
 3. customer
  - 27894 Rows * 5 Columns
- - 2022-01-01 ~ 2023-08-28
- - 
+
+  
 4. refund
  - 27894 Rows * 8 Columns
- - 2022-01-01 ~ 2023-08-28
-
 
 ### - 문제
 
@@ -169,11 +167,11 @@
     - 취소 상태의 전체 금액이 가장 크다 → 구입 후 단기간 내에 할인 시 환불 후 재구매가 많다.<br/>
   ![alt text](Q2_10_2.png)
   
-  |주문 상태|주문 당 가격|
-  |---|---|
-  |CANCELLED|250,282|
-  |COMPLETED|225,478|
-  |PENDING|235,483|
+      |주문 상태|주문 당 가격|
+      |---|---|
+      |CANCELLED|250,282|
+      |COMPLETED|225,478|
+      |PENDING|235,483|
 
 ### - 가설
 
@@ -215,7 +213,7 @@
 
 - 할인율 확인
   - 주문 대비 할인 받은 비율(%)
-  - 주문량이 적었던 오후시간에, 할인 받는 비율이 낮음
+  - 주문량이 적었던 오후시간에, 할인 받는 비율이 낮음<br/>
   ![alt text](discount_rate.png)
 
 ### - 결과 및 결론
