@@ -1,18 +1,26 @@
 ***
 
-# ▶ 고객 추가 구매 유도 방안 수립 <img src="https://img.shields.io/badge/Personal_Project-000000"/>
+# ▶ 이커머스 고객 추가 구매 유도 방안 수립 <img src="https://img.shields.io/badge/Personal_Project-000000"/>
 
-### - 목적
+### 현재 양식 통일화 진행 중입니다. 자세한 내용은 Notion 참조 부탁드립니다!
 
--  가상 이커머스 ‘다잇다'의 고객 구매 이력 데이터를 기반으로 고객의 추가 구매 유도를 하기 위한 방안을 수립
+<!-- ### - 프로젝트 개요
 
-### - 기대효과
+-  목적 :  가상의 이커머스 고객 추가 구매 유도 방안 수립
+-  배경 : 고객 구매 이력 데이터를 기반으로 고객의 추가 구매 유도 방안을 수립하는 과제였습니다. 식품 재구매 및 추가 구매율이 높을 것으로 예상했습니다. 해당 상품 프로모션을 통해 방문률을 향상으로 추가 구매를 통한 매출 및 이익 증가가 예상했습니다.
 
-- 고객의 추가 구매 유도를 통한 매출 및 이익 증가
+### - 데이터
 
-### - 사용 툴
+- 2021년 1월부터 6월까지의 가상 이커머스 데이터입니다. 고유 회원은 약 7만명입니다.
+    - 구매 이력 데이터 : 고객 번호, 연령, 주문 일자, 주문 채널, 아이템 카테고리, 금액 등 (약 15만 건)
 
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/VisualStudioCode-007ACC?style=flat&logo=visualstudiocode&logoColor=white"/>
+### - 분석
+
+- 분석 도구 : <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/VisualStudioCode-007ACC?style=flat&logo=visualstudiocode&logoColor=white"/>
+- 상품 가격과 할인율 확인
+  - 당사가 가지고 있는 상품을 파악하기 위해 2500원 단위로 상품 가격 분포를 확인했습니다. 5000원 미만의 상품이 다수인 것과 단수 가격 전략으로 인해 만원 주기로 상품 개수가 늘어나는 모습을 확인했습니다.![상품 가격 분포도 (2500원 단위)](https://github.com/SKYoooon/EXPORT/raw/main/Ecommerce/Task2/image-1.png)
+
+상품 가격 분포도 (2500원 단위)
 
 ### - 데이터 설명
 
@@ -231,4 +239,4 @@
 
 ### - Lesson & Learned
 - 현업에서 구매 주기 도래 시 해당 아이템에 대한 마케팅 메시지, 캠페인 / 가격 탄력성이 있는 품목의 경우 약간의 할인 전략 등 진행함
-- 표 깔끔하게 정리했만 시각화가 부족, 시각화를 더 사용하자 (추후 추가 예정)
+- 표 깔끔하게 정리했만 시각화가 부족, 시각화를 더 사용하자 (추후 추가 예정) -->

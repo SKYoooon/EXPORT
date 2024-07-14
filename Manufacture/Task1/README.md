@@ -1,8 +1,10 @@
 ***
 
-# ▶ 제조, 금융, 게임 데이터 기본 <img src="https://img.shields.io/badge/Personal_Project-000000"/>
+# ▶ 제조, 금융, 게임 분야 이상 탐지 기본 <img src="https://img.shields.io/badge/Personal_Project-000000"/>
 
-### - 목적
+### 현재 양식 통일화 진행 중입니다. 자세한 내용은 Notion 참조 부탁드립니다!
+
+<!-- ### - 목적
 
 - 세 분야 별로 주어진 문제 풀이 및 시각화
 
@@ -239,4 +241,4 @@
 - value_counts 결과만이 아니라 DataFrame을 통해서 보기 편하게 하기
 - 데이터가 크면 샘플링을 통해 여러 번 분석하고, 이후 표본집단과 비교하기
 
-***
+*** -->

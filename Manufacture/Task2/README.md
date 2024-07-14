@@ -1,7 +1,9 @@
 ***
 
-# ▶ 센서 데이터를 통한 웨이퍼 불량 탐색 <img src="https://img.shields.io/badge/Personal_Project-000000"/>
+# ▶ 불량 웨이퍼 이상 탐지 모델 개발 <img src="https://img.shields.io/badge/Personal_Project-000000"/>
 
+### 현재 양식 통일화 진행 중입니다. 자세한 내용은 Notion 참조 부탁드립니다!
+<!-- 
 ### - 목적
 
 - 센서 데이터로부터 불량 웨이퍼 패턴을 식별하기 위한 이상 탐지 모델 개발
@@ -77,4 +79,4 @@
 - 이상징후를 신호등 체계로 표현 가능
 - Isolation Forest Feature IMP 분석을 통해 어떤 변수에 의해서 이상탐지가 되었는지에 대한 해석이 가능 → 모델에 설명력 확보 가능
 
-***
+*** -->
